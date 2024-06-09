@@ -8,17 +8,31 @@
 {
     --mainFont: 'Netflix Sans';
     --priamryCol: rgb(229, 9, 20);
-    --secCol: white;
+    --secCol: rgb(255,255,255);
 }
+
 header
 {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+    position: relative;
+    
+}
+header::before
+{
+  content: ''; 
+   height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
     background-image: url("/images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    gap: 500px;
+    filter: brightness(30%);
 }
 .nav
 {
@@ -26,6 +40,7 @@ header
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 1000px;
 
 }
 .nav svg
@@ -58,20 +73,22 @@ header
     justify-content: center;
     align-items: center;
     line-height: 200px;
+    overflow: auto;
 }
 .heading
 {
-    font-size: 100px;
-    font-family:var(--mainFont);
+    font-size: 70px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900;
 }
 .second
 {
-    font-size: 45px;
+    font-size: 35px;
     font-family: var(--mainFont);
 }
 .form
 {
-    font-size: 45px;
+    font-size: 35px;
     font-family: var(--mainFont);
 }
 .input
@@ -108,7 +125,130 @@ header
     background: transparent;
 
 }
+.line-break
+{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(65, 64, 64);
+}
+.article-1
+{
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    color: var(--secCol);
+    padding-left: 500px;
+    padding-right: 300px;
+    font-family: var(--mainFont);
+}
+.Image2
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Tv
+{
+    width: 100%;
+}
+.Image2 img
+{   width: 100%;
+   object-fit: contain;
+}
+#article
+{
+    padding-left: 3px ;
+}
+.Kid
+{
+    width: 70%;
+}
+.kid
+{
+    width: 50%;
+}
+.kid img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.Watch
+{
+    width: 30%;
+}
+.Image2 video
+{
+   position: relative;
+   top: -25px;
+   left: -835px;
+   width: 1250px;
+}
+.EnjoyH
+{   width: 75%;
+    font-size: 180px;
+    font-weight: 900;
+    line-break: 350px;
+    margin-bottom: 100px;
+}
+.para{
+    font-size: 70px;
+}
+.article-2
+{
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    color: var(--secCol);
+    padding-left: 300px;
+    padding-right: 300px;
+    font-family: var(--mainFont);
+}
+.mobile
+{
+    width: 60%;
+}
+.mobile img
+{
+    width: 100%;
+    object-fit: cover;
+}
 *
 {
     margin: 0;
+}
+.faq
+{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+
+}
+@media screen and (min-width = 200px)
+{  
+  .nav
+  { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }  
+}
+@media screen and (min-width <= 1000px)
+{  
+  .nav
+  { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }  
 }
