@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+:root
+{
+    --mainFont: 'Netflix Sans';
+    --priamryCol: rgb(229, 9, 20);
+    --secCol: rgb(255,255,255);
+}
+
+.header
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    position: relative;
+    
+}
+*
+{
+    margin: 0;
+}
+header::before
+{
+  content: ''; 
+   height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    filter: brightness(50%);
+}
+
+.logo svg
+{
+    width: 10%;
+    fill: var(--priamryCol);
+    margin: 90px;
+    margin-left: 450px;
+}
+.signIn
+{
+    width: 30%;
+    height: 70vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   margin: auto;
+   color: var(--secCol);
+   font-family: var(--mainFont);
+   padding: 100px;
+   position: relative;
+   z-index: 1;
+   gap: 40px;
+}
+.signIn::before
+{
+    content: ''; 
+    height: 100%;
+     width: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     background-color: black;
+     opacity: 0.8;
+}
+.heading
+{
+    font-size: 150px;
+    font-weight: 600;
+}
+.SignIN{
+    width: 25vw;
+    height: 7vh;
+    font-family: var(--mainFont);
+    font-size: 60px;
+    color: var(--secCol);
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    background-color: var(--priamryCol);
+}
+#Email
+{
+    width: 25vw;
+    height: 8vh;
+    font-family: var(--mainFont);
+    font-size: 60px;
+    color: var(--secCol);
+    border: 0.01em solid white;
+    border-radius: 12px;
+    outline: none;
+    background: black;
+    opacity: 0.6;
+
+}
+.or 
+{
+    font-size: 56px;
+    
+}
+.Code
+{
+    width: 25vw;
+    height: 7vh;
+    font-family: var(--mainFont);
+    font-size: 60px;
+    color: var(--secCol);
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    background-color: rgb(75, 72, 72);
+    opacity: 0.5;
+}
+.check
+{
+    width: 25vw;
+    height: 7vh;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-size: 50px;
+    font-family: var(--mainFont);
+    color: var(--secCol);
+}
+#Remember
+{
+    user-select: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 22px;
+}
+a
+{
+    color: var(--secCol);
+    font-family: var(--mainFont);
+    font-weight: 900;
+    text-decoration: none;
+}
+footer 
+{
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secCol);
+    text-decoration: underline;
+    text-decoration-color: var(--secCol);
+    font-family: var(--mainFont);
+    font-size: 45px;
+    gap: 350px;
+    cursor: pointer;
+    position: relative;
+    top: -450;
+    left: 0;
+}
+.list
+{
+    list-style-type: none;
+    line-height: 100px;
+}
+

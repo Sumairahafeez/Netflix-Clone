@@ -95,6 +95,7 @@ header::before
     justify-content: center;
     align-items: center;
     margin-bottom: 150px;
+  
 }
 .input
 {
@@ -120,7 +121,7 @@ header::before
 #Email
 {
     width: 30vw;
-    height: 8vh;
+    height: 7vh;
     font-family: var(--mainFont);
     font-size: 80px;
     color: var(--secCol);
@@ -128,6 +129,7 @@ header::before
     border-radius: 12px;
     outline: none;
     background: transparent;
+    opacity: 0.7;
 
 }
 .line-break
@@ -272,6 +274,13 @@ header::before
     align-items: center;
 
 }
+a
+{
+    color: var(--secCol);
+    font-family: var(--mainFont);
+    font-weight: 900;
+    text-decoration: none;
+}
 footer 
 {
     background-color: black;
@@ -293,6 +302,14 @@ footer
     list-style-type: none;
     line-height: 100px;
 }
+
+.signIn
+{
+    background-color: black;
+    width: 40%;
+    height: 100%;
+}
+
 /* .form h1
 {
     line-height: 100px;
